@@ -38,3 +38,24 @@ Array, Objects, functions
 
 */
 
+//++++++++++++++++JS Memories++++++++++++++++++++++++++
+
+// stack(primitive), heap(non-primitive)
+let myYoutubename = "miki.com"
+let anotherName = myYoutubename
+
+console.log(anotherName)
+anotherName = "miki2.com"
+console.log(myYoutubename)
+console.log(anotherName)
+// stack memory is not store the variable , it just copy the value 
+let obj1 = {
+    name: "miki",
+    age: 30
+}
+//heap is not the obj value, it reference value
+let obj2 = obj1
+obj2.age = 35
+
+console.log(obj1)
+console.log(obj2)
