@@ -44,24 +44,29 @@ const tenderUser = {
 // const result = (tenderUser?.hasOwnProperty('address') === true) ? tenderUser?.address : tenderUser?.name;
 
 const result2 = (Object.keys(tenderUser) )
-console.log(tenderUser?.address ? tenderUser?.address : tenderUser?.email)
+// console.log(tenderUser?.address ? tenderUser?.address : tenderUser?.email)
 
 
-// const obj1 = {1: 'a', 2: 'b'}
-// const obj2 = {3: 'a', 4: 'b'}
-// const obj3 = {5: 'a', 6: 'b'}
+const obj1 = {1: 'a', 2: 'b'}
+const obj2 = {3: 'a', 4: 'b'}
+const obj3 = {5: 'a', 6: 'b'}
 
+const obj4 = {obj1, obj2, obj3}
+
+// const obj5 = Object.assign(obj1, obj2, obj3)
+const obj6 = {...obj1, ...obj2, ...obj3}
+console.log(obj6);
 // const obj4 = {obj1, obj2, ob3}
-const arryObject = [
-    {
-        name: "miki1",
-        email: "miki1@xyz.com",
-        age: 30
-    },
-    {
-        name: "miki2",
-        email: "miki2@xyz.com",
-        age: 32,
-        address: "bangalore"
-    }
-]
+// const arryObject = [
+//     {
+//         name: "miki1",
+//         email: "miki1@xyz.com",
+//         age: 30
+//     },
+//     {
+//         name: "miki2",
+//         email: "miki2@xyz.com",
+//         age: 32,
+//         address: "bangalore"
+//     }
+//]
