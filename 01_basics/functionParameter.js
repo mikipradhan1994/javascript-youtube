@@ -57,11 +57,42 @@ function userLoggedIn(username) {
     }
     return `${username} logged in`
  }
-console.log(userLoggedIn("miki"))
+// console.log(userLoggedIn("miki"))
+
 
 /////
 function calculateCartprice(v1,...price) {
     return price
 }
 
-console.log(calculateCartprice(100,200,300))
+// console.log(calculateCartprice(100,200,300))
+
+// +++++++++++++++++ Function declaration , closure and hoisting ++++++++++++++++
+
+function one() {
+    const username = "miki";
+    function two() {
+        const website = "google";
+        console.log(`${username} and ${website}`)
+    }
+    two();
+   // console.log(website) // here you can not website
+    console.log(username)
+
+}
+
+one()
+
+// function declaration
+console.log(addone(5))
+function addone(num) {
+    return num + 1;
+}
+// console.log(addone(5))
+
+//another way to ceclare a function
+// console.log(addtwo(6)) Here we can't get function result bcz of declaration this is called hoisting
+const addtwo = function(value) {
+    return value + 1
+}
+// console.log(addtwo(6))
